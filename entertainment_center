@@ -1,0 +1,53 @@
+'''using fresh_tomatoes API,
+each media file is an instance of a trailer'''
+
+import media
+import fresh_tomatoes
+
+toy_story = media.Movie("Toy Story",
+                        "A story of a boy and his toys that come to life",
+                        "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
+
+
+avatar = media.Movie("Avatar",
+                     "A marine on an alien planet",
+                     "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
+                     "http://www.youtube.com/watch?v=-9ceBgWV8io")
+
+
+warcraft = media.Movie("Warcraft",
+                       "A fight between different invading species",
+                       "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Warcraft_Teaser_Poster.jpg/220px-Warcraft_Teaser_Poster.jpg",
+                       "https://www.youtube.com/watch?v=2Rxoz13Bthc")
+
+starwars = media.Movie("Star Wars: The Force Awakens",
+                       "Continuation of the intergalactic struggle for survival of the light side",
+                       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg/220px-Star_Wars_The_Force_Awakens_Theatrical_Poster.jpg",
+                       "https://www.youtube.com/watch?v=sGbxmsDFVnE")
+
+fifth_wave = media.Movie("The Fifth Wave",
+                         "Four waves of increasingly deadly alien attacks have left most of Earth decimated.",
+                         "http://ia.media-imdb.com/images/M/MV5BMTg0MzUxMDM1NF5BMl5BanBnXkFtZTgwMjk5MDgyNzE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+                         "https://www.youtube.com/watch?v=kmxLybfGNC4")
+
+ip_man3 = media.Movie("IP Man: 3",
+                      "When a band of brutal gangsters led by a crooked property developer make a play to take over the city, Master Ip is forced to take a stand.",
+                      "http://ia.media-imdb.com/images/M/MV5BNTA2MTk3NzI5Ml5BMl5BanBnXkFtZTgwNzU2MzYyNzE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                      "https://www.youtube.com/watch?v=jckXscMwIOI")
+
+synchronicity = media.Movie("Synchronicity",
+                            "When physicist Jim Beale invents a machine that can fold space-time, a rare Dahlia appears from the future",
+                            "http://ia.media-imdb.com/images/M/MV5BMTc2NDAyOTc4MV5BMl5BanBnXkFtZTgwNjE4Mjk0NzE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                            "https://www.youtube.com/watch?v=E1el06Ic5Ts")
+
+the_boy = media.Movie("The Boy",
+                      "An American nanny is shocked that her new English family's boy is actually a life-sized doll. ",
+                      "http://ia.media-imdb.com/images/M/MV5BMTQ1NzAwNTg1M15BMl5BanBnXkFtZTgwNDQwOTQ0NzE@._V1_UY209_CR0,0,140,209_AL_.jpg",
+                      "https://www.youtube.com/watch?v=XGbB9UQ6r1g")
+                            
+movies = [toy_story, avatar, warcraft, starwars, fifth_wave, ip_man3, synchronicity, the_boy]
+fresh_tomatoes.open_movies_page(movies)
+
+
+
